@@ -43,6 +43,6 @@ GitHub는 git repository를 위한 웹 기반 호스팅 서비스로서, 클라�
 
 #### 6.리모트 git 저장소에 원하지 않는 파일이 올라갔을 때 이를 되돌리려면 어떻게 해야할까요?
 git reset, git revert, git rebase를 사용할 수 있다.
-git rebase -i HEAD~N으로 VIM interface를 사용할 수 있으며,
+git rebase -i HEAD ~ N 으로 VIM interface를 사용할 수 있으며,
 git revert HEAD~N을 통해 여러 커밋의 변경사항을 폐지시킬 수 있다.
-git rebase --soft HEAD~으로 commit을 취소하거나, git rebase --mixed HEAD~으로 commit, staging을 취소하거나, git rebase --hard HEAD~로 commit, rebase, local change까지 취소할 수 있다.
+git rebase --soft HEAD ~ N 으로 commit을 취소하거나, git rebase --mixed HEAD ~ N 으로 commit, staging을 취소하거나, git rebase --hard HEAD ~ N 로 commit, rebase, local change까지 취소할 수 있다.
